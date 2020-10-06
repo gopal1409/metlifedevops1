@@ -1,0 +1,36 @@
+Connection to centos1 closed.
+[root@ansiblemaster ansible]# history
+    1  hostnamectl set-hostname --static ansiblemaster
+    2  bash
+    3  ping centos1
+    4  cd /etc/ansible/
+    5  ls
+    6  gedit hosts
+    7  vi hosts
+    8  ansible centos1 -m ping
+    9  ansible --version
+   10  pwd
+   11  ls
+   12  vi ansible.cfg
+   13  ansible centos1 -m command -a uptime
+   14  ansible centos1 -m shell -a uptime
+   15  ansible all -m shell -a uptime
+   16  ansible all -m group -a "name=weblogic state=present"
+   17  ansible all -m group -a "name=weblogic state=presen"
+   18  ansible all -m user -a "name=weblogic group=weblogic createhome=yes"
+   19  touch /tmp/myconf.cfg
+   20  ansible all -m file -a "src=/tmp/myconf.cfg dest=/tmp/myconf.cfg"
+   21  ansible all -m copy -a "src=/tmp/myconf.cfg dest=/tmp/myconf.cfg"
+   22  ansible all -m file -a "path=/tmp/myconf.cfg group=weblogic owner=weblogic"
+   23  history
+   24  ansible all -m yum -a "name=httpd state=installed"
+   25  ansible all -m service -a "name=httpd state=started enable=yes"
+   26  ansible all -m service -a "name=httpd state=started enabled=yes"
+   27  history
+   28  ansible all -m yum -a "name=tree state=installed"
+   29  history
+   30  ansible all -m yum -a "name=tomcat state=installed"
+   31* ansible all -m service -a "name=tomcat state=starte enabled=yes"
+   32  history
+   33  ansible all -m yum -a "name=tomcat state=instal"
+   34  ssh root@centos1
